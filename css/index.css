@@ -1,0 +1,174 @@
+.hide {
+    display: none;
+}
+.specialWord {
+    font-weight: bold;
+    color: #0fd0c5;
+}
+.specialSentence {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.vertical-center-up {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vertical-center-down {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+body {
+    height: 1020px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 1em;
+    background-image: url('../res/img/widebg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited, a:target {
+    color: #ffffff;
+}
+
+#skye-background {
+    width: 65%;
+    height: 100%;
+    margin: 100px auto 0;
+    background-image: url('../res/img/longbg.jpg');
+    background-size: 100% 100%;
+}
+#skye-contentPage {
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 15%;
+    text-align: center;
+    position: relative;
+}
+
+#skye-header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+#skye-logo {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#skye-nav {
+    font-size: 0.9em;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#skye-nav a:not(:last-child) {
+    padding-right: 5px;
+    border-right: #ffffff solid 1px;
+}
+
+#skye-personal {
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+}
+#skye-quote {
+    position: relative;
+}
+#skye-quote div {
+    display: inline-block;
+    width: 1.2em;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#skye-about h1 {
+    margin-bottom: 0;
+}
+#skye-about .doing {
+    margin-top: 0;
+    position: relative;
+}
+#skye-about .doing span {
+    display: inline-block;
+    width: 1.2em;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#skye-about p {
+    font-size: 0.9em;
+    color: #b7b7b8;
+}
+#skye-about button {
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #0fd0c5;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;;
+    bottom: 0px;
+}
+footer img {
+    width: 50px;
+    height: inherit;;
+    position: absolute;
+    left: 0;
+}
+footer span {
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    transform: translateY(50%);
+    width: 50%;
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -89,7 +89,7 @@ a:link, a:visited, a:target {
     margin: 0;
 }
 #skye-nav a {
-    padding: 0 5px;
+    padding: 0 .3em;
 }
 #skye-nav a:not(:last-child) {
     border-right: #ffffff solid 1px;
@@ -97,7 +97,7 @@ a:link, a:visited, a:target {
 #skye-nav li {
     display: inline-block;
     position: relative;
-    letter-spacing: 3px;
+    letter-spacing: .2em;
 }
 #skye-nav li:hover {
     color: #0fd0c5;

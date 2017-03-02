@@ -25,7 +25,7 @@
 
 
 body {
-    height: 1020px;
+    height: auto;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -34,6 +34,9 @@ body {
     background-image: url('../res/img/widebg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+section {
+    margin-top: 20px;
 }
 a {
     text-decoration: none;
@@ -149,7 +152,10 @@ a:link, a:visited, a:target {
              blink-caret .5s step-end infinite alternate;
 }
 
-
+#skye-about {
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ffffff;
+}
 #skye-about h1 {
     margin-bottom: 0;
 }
@@ -194,6 +200,33 @@ a:link, a:visited, a:target {
     transition-duration: 0.5s;
 }
 
+#skye-work {
+    width: 100%;
+}
+#skye-work .myWork {
+     /*text-align: initial; */
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 20px;
+    /* position: relative; */
+}
+.workInfo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 48%;
+    height: 200px;
+    border: 1px solid #0fd0c5;
+}
+.workImg img {
+    width: 100%;
+    height: 100%;
+}
+.workIntro {
+    color: #2A292D;
+    background-color: #0fd0c5;
+}
+
 
 
 
@@ -204,7 +237,7 @@ footer {
     width: 100%;
     height: 50px;
     font-size: 0.8em;
-    position: absolute;;
+    position: relative;
     bottom: 0px;
 }
 footer img {
@@ -214,11 +247,11 @@ footer img {
     left: 0;
 }
 footer span {
+    width: 100%;
     position: absolute;
     bottom: 50%;
-    right: 40%;
+    right: 0;
     transform: translateY(50%);
-    width: 50%;
 }
 /*
 

@@ -88,13 +88,16 @@ a:link, a:visited, a:target {
     height: 100%;
     margin: 0;
 }
+#skye-nav a {
+    padding: 0 5px;
+}
 #skye-nav a:not(:last-child) {
-    padding-right: 5px;
     border-right: #ffffff solid 1px;
 }
 #skye-nav li {
     display: inline-block;
     position: relative;
+    letter-spacing: 3px;
 }
 #skye-nav li:hover {
     color: #0fd0c5;
@@ -143,8 +146,9 @@ a:link, a:visited, a:target {
 }
 #skye-sayHi {
     display: inline-block;
+    letter-spacing: 1px;
     border-right: .1em solid;
-  	width: 35ch; /* # of chars */
+  	width: 40ch; /* # of chars */
     /*width: 80%;*/
   	white-space: nowrap;
   	overflow: hidden;
@@ -202,6 +206,8 @@ a:link, a:visited, a:target {
 
 #skye-work {
     width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ffffff;
 }
 #skye-work .myWork {
      /*text-align: initial; */
@@ -232,6 +238,37 @@ a:link, a:visited, a:target {
 
 
 
+.contacts {
+    height: 4rem;
+    position: relative;
+}
+.contact {
+    display: inline-block;
+    margin: 10px;
+    width: 3rem;
+    height: 3rem;
+    transition: width 0.5s, height 0.5s;
+    position: absolute;
+}
+.contact:hover {
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: width 0.5s, height 0.5s;
+}
+.contact img {
+    width: 100%;
+    height: 100%;
+}
+#contact-email {
+    left: 30%;
+}
+#contact-github {
+    left: 50%;
+    transform: translateX(-70%);
+}
+#contact-weibo {
+    right: 30%;
+}
 
 footer {
     width: 100%;

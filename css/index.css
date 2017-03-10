@@ -62,20 +62,25 @@ a:link, a:visited, a:target {
 }
 
 #skye-header {
-    width: 100%;
+    width: 100%
+}
+.skye-header {
     height: 100px;
-    /*position: relative;*/
+    position: relative;
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
 }
 .skye-header-scroll {
     z-index: 100;
-    width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #000000;
     box-sizing: border-box;
     padding: 0 100px;
     position: fixed;
     left: 0px;
     top: 0px;
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
 }
 
 #skye-logo {

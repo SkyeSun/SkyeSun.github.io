@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/index_scroll.css">
   </head>
   <body>
-      <div id="skye-background">
+      <div id="skye-background" data-curnum="0">
           <div id="skye-contentPage">
 
               <header id="skye-header" class="skye-header">
-                  <img id="skye-logo" src="res/img/logo.png" alt="Personal Logo">
+                  <a href="#skye-personal"><img id="skye-logo" src="res/img/logo.png" alt="Personal Logo"></a>
                   <nav id="skye-nav">
                       <ul>
-                          <a href="#skye-about"><li>ABOUT<span></span></li></a>
-                          <a href="#skye-work"><li>WORK<span></span></li></a>
-                          <a href="#skye-blog"><li>BLOG<span></span></li></a>
-                          <a href="#skye-resume"><li>RESUME<span></span></li></a>
-                          <a href="#skye-contact"><li>CONTACT<span></span></li></a>
+                          <a href="#skyeabout"><li data-num=1>ABOUT<span></span></li></a>
+                          <a href="#skyework"><li data-num=2>WORK<span></span></li></a>
+                          <a href="#skyeblog"><li data-num=3>BLOG<span></span></li></a>
+                          <a href="#skyeresume"><li data-num=4>RESUME<span></span></li></a>
+                          <a href="#skyecontact"><li data-num=5>CONTACT<span></span></li></a>
                       </ul>
 
                   </nav>
@@ -35,11 +35,11 @@
                   <div class="content vertical-center-up">
                       <h1>WHAT I DO</h1>
                       <p class="doing specialSentence">Coding and driving<span></span></p>
-                      <p>Skye Sun, 22 year old Web Front-End Programmer currently based in <span class="specialWord">Beijing</span>,China
-                          and studying in <span class="specialWord">JXNU</span>, loving tec and cars, hoping to change the
+                      <p>Skye Sun<br>22 year old Web Front-End Programmer<br> currently based in <span class="specialWord">Beijing</span>,China
+                          <br>studying in <span class="specialWord">JXNU</span><br>loving tec and cars<br>hoping to change the
                           world by coding someday.</p>
-                      <p>Check out some of my featured projects below or view more of my work on <span class="specialWord">Github</span>
-                         or <span class="specialWord">My Blog</span>(not ready yet)</p>
+                      <p>Check out some of my featured projects below<br> or view more of my work on <span class="specialWord">Github</span>
+                         and <span class="specialWord">My Blog</span>(coming soon)</p>
 
                       <p>I'm Currently <span class="specialWord">Available</span> for Hire!</p>
                       <button type="button" name="button">CONTACT ME NOW</button>
@@ -48,16 +48,17 @@
 
               <section id="skye-work" class="section">
                   <div class="content vertical-center-up">
+                      <h1>MY WORKS</h1>
                       <div id="work1" class="myWork">
                           <div class="workImg workInfo">
-                              <img src="res/img/logo.png" alt="work 1 img here">
+                              <img src="res/img/demo1.gif" alt="work 1 img here">
                           </div>
                           <div class="workIntro workInfo">
-                              <p>work 1 Intro</p>
+                              <p>音乐播放器</p>
                           </div>
                       </div>
 
-                      <div id="work2" class="myWork">
+                      <div id="work2" class="myWork hide">
                           <div class="workIntro workInfo">
                               <p>work 2 Intro</p>
                           </div>
@@ -82,9 +83,7 @@
 
               <section id="skye-contact" class="section">
                   <div class="content vertical-center-up">
-                      <div class="">
-                          Contact
-                      </div>
+                      <h1>Contact</h1>
                       <div class="contacts">
                           <div id="contact-email" class="contact">
                               <a href="#" target="_blank">
@@ -114,6 +113,6 @@
       </div>
 
       <script src="js/skye.js"></script>
-      <script src="js/index.js"></script>
+      <script src="js/index_scroll.js"></script>
   </body>
 </html>

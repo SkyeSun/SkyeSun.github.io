@@ -1,0 +1,315 @@
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.hide {
+    display: none;
+}
+.specialWord {
+    font-weight: bold;
+    color: #0fd0c5;
+}
+.specialSentence {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+.vertical-center-up {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vertical-center-down {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial,"Microsoft YaHei",sans-serif;
+}
+
+html,body{
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited, a:target {
+    color: #ffffff;
+}
+
+#skye-background, #skye-contentPage, .section {
+    height: 100%;
+    position: relative;
+}
+
+#skye-personal, #skye-work, #skye-resume {
+    background-color: #0fd0c5;
+}
+
+#skye-about, #skye-blog, #skye-contact {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#skye-header {
+    width: 100%
+}
+.skye-header {
+    z-index: 100;
+    height: 80px;
+    /*background-color: #000000;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 0 100px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition-property: width, height, background-color;
+    transition-duration: 1s;
+}
+
+#skye-logo {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#skye-nav {
+    height: 1em;
+    font-size: 0.8em;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#skye-nav ul {
+    height: 100%;
+    margin: 0;
+}
+#skye-nav a {
+    padding: 0 .3em;
+}
+#skye-nav a:not(:last-child) {
+    border-right: #ffffff solid 1px;
+}
+#skye-nav li {
+    display: inline-block;
+    position: relative;
+    letter-spacing: .2em;
+}
+#skye-nav li:hover {
+    color: #0fd0c5;
+    /*border-bottom: 2px solid #0fd0c5;*/
+    /*transition: border-color 1s;*/
+}
+#skye-nav li span {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s, border 0.5s;
+}
+#skye-nav li span:hover {
+    width: 100%;
+    border-bottom: 2px solid #0fd0c5;
+    transition: width 1s;
+}
+
+#skye-personal .content {
+    width: 100%;
+    text-align: center;
+}
+#skye-quote {
+    position: relative;
+
+}
+#skye-quote div {
+    display: inline-block;
+    width: 1.2em;
+    height: 100%;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+#skye-quote div:hover {
+    width: 100%;
+    transition: width 1s;
+}
+#skye-sayHi {
+    display: inline-block;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    border-right: .1em solid;
+  	width: 40ch; /* # of chars */
+    /*width: 80%;*/
+  	white-space: nowrap;
+  	overflow: hidden;
+    animation: typing 8s steps(40, end),
+               blink-caret .5s step-end infinite alternate;
+}
+
+#skye-about .content {
+    width: 100%;
+    text-align: center;
+}
+#skye-about h1 {
+    margin-bottom: 0;
+}
+#skye-about p, button {
+    margin-top: 20px
+}
+#skye-about .doing {
+    margin-top: 0;
+    position: relative;
+}
+#skye-about .doing span {
+    display: inline-block;
+    width: 1.2em;
+    height: 150%;
+    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+#skye-about .doing span:hover {
+    width: 80%;
+    transition: width 1s;
+}
+#skye-about p {
+    font-size: 0.9em;
+    color: #b7b7b8;
+}
+#skye-about button {
+    color: #0fd0c5;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 2px solid #0fd0c5;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    transition-property: color, border, background-color;
+    transition-duration: 0.5s;
+}
+#skye-about button:hover {
+    color: #000000;
+    border: 2px solid #0fd0c5;
+    background-color: #0fd0c5;
+    transition: color, border, background-color;
+    transition-duration: 0.5s;
+}
+
+#skye-work .content {
+    width: 100%;
+    text-align: center;
+}
+#skye-work .myWork {
+     /*text-align: initial; */
+    vertical-align: middle;
+    width: 100%;
+    /*margin-top: 20px;*/
+    /* position: relative; */
+}
+/*#skye-work .mywork:not(:last-child) {
+    margin-bottom: 20px;
+}*/
+.workInfo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 48%;
+    height: 200px;
+    border: 1px solid #000000;
+}
+.workImg img {
+    width: 100%;
+    height: 100%;
+}
+.workIntro {
+    color: #2A292D;
+    background-color: #000000;
+}
+
+#skye-blog .content {
+    width: 100%;
+    text-align: center;
+}
+
+#skye-resume .content {
+    width: 100%;
+    text-align: center;
+}
+
+#skye-contact .content {
+    width: 100%;
+    text-align: center;
+}
+.contacts {
+    height: 4rem;
+    position: relative;
+}
+.contact {
+    display: inline-block;
+    margin: 10px;
+    width: 5rem;
+    height: 5rem;
+    transition: width 0.5s, height 0.5s;
+    position: absolute;
+}
+.contact:hover {
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: width 0.5s, height 0.5s;
+}
+.contact img {
+    width: 100%;
+    height: 100%;
+}
+#contact-email {
+    left: 30%;
+}
+#contact-github {
+    left: 50%;
+    transform: translateX(-70%);
+}
+#contact-weibo {
+    right: 30%;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    font-size: 0.8em;
+    position: relative;
+    bottom: 0px;
+}
+footer img {
+    width: 50px;
+    height: inherit;;
+    position: absolute;
+    left: 0;
+}
+footer span {
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}

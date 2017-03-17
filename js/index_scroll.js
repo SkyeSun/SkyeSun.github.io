@@ -117,6 +117,24 @@ var bindTouchEvent = function() {
     })
 }
 
+var bindWork1 = function() {
+    var img = getElement('#work1-img')
+    var des = getElement('#work1-des')
+
+    bindEvent(img, 'mouseenter', function(){
+        img.parentElement.style.transform = 'rotateY(180deg)'
+    })
+    bindEvent(des, 'mouseleave', function(){
+        des.parentElement.style.transform = 'rotateY(0deg)'
+    })
+    bindEvent(img, 'touchstart', function(){
+        img.parentElement.style.transform = 'rotateY(180deg)'
+    })
+    bindEvent(des, 'touchend', function(){
+        des.parentElement.style.transform = 'rotateY(0deg)'
+    })
+}
+
 
 
 
@@ -144,6 +162,7 @@ var skye = function() {
     bindScroll()
     bindParticle()
     bindTouchEvent()
+    bindWork1()
 }
 
 skye()

@@ -35,16 +35,26 @@ body {
     font-family: Arial,"Microsoft YaHei",sans-serif;
 }
 
-html,body{
+html,body {
     height: 100%;
     overflow: hidden;
 }
 
+canvas {
+    z-index: 1;
+    opacity: 0;
+    position: fixed;
+    transition: opacity 1s;
+}
 a {
     text-decoration: none;
 }
 a:link, a:visited, a:target {
     color: #ffffff;
+}
+
+.content {
+    z-index: 2;
 }
 
 #skye-background, #skye-contentPage, .section {
@@ -341,6 +351,7 @@ footer span {
 }
 
 #slideDown {
+    z-index: 3;
     width: 2rem;
     height: 2rem;
     opacity: 0.5;

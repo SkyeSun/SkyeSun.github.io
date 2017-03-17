@@ -48,6 +48,8 @@ var move = function(num) {
     } else {
         slideDownBtn.style.display = 'block'
     }
+    // bindParticle(num)
+    hideCanvas(num)
 }
 
 // 监听鼠标滚轮事件(套路)
@@ -65,28 +67,29 @@ var mouseScroll = function(fn){
     }
 }
 
+var hideCanvas = function(num) {
+    var canvas = getElements('canvas')
+    if(num % 2 == 0) {
+        canvas[0].style.opacity = '0'
+        canvas[1].style.opacity = '1'
+    } else {
+        canvas[0].style.opacity = '1'
+        canvas[1].style.opacity = '0'
+    }
+
+}
+
 // 绑定粒子动态效果
 var bindParticle = function() {
-    var ids = ['#skye-personal', '#skye-about', '#skye-work', '#skye-blog', '#skye-resume', '#skye-contact']
-
-    bindEvent(document, 'DOMContentLoaded', function(){
-      for (var i = 0; i < ids.length; i+=2) {
-          var ele = getElement(ids[i])
-          particleground(ele, {
-              dotColor: '#7AEBEB',
-              lineColor: '#7AEBEB'
-          })
-          // log('Ele: ', ele)
-      }
-      for (var i = 1; i < ids.length; i+=2) {
-          var ele = getElement(ids[i])
-          particleground(ele, {
-              dotColor: '#555555',
-              lineColor: '#555555'
-          })
-          // log('Ele: ', ele)
-      }
-    })
+    var colors = ['#7AEBEB', '#555555']
+    var ele = getElement('#skye-background')
+    for (var i = 0; i < colors.length; i++) {
+        particleground(ele, {
+            dotColor: colors[i],
+            lineColor: colors[i]
+        })
+    }
+    hideCanvas(0)
 }
 
 var bindTouchEvent = function() {
@@ -94,7 +97,7 @@ var bindTouchEvent = function() {
     var nextNum = 0
 
     var startX = 0, startY = 0, endX = 0, endY = 0
-    var selector = '.section'
+    var selector = 'canvas'
     bindEventAll(selector, 'touchstart', function(e){
         startX = Number(e.targetTouches[0].pageX)
         startY = Number(e.targetTouches[0].pageY)

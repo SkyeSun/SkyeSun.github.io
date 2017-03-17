@@ -105,9 +105,9 @@ var bindTouchEvent = function() {
         endY = Number(e.changedTouches[0].pageY)
         var x = startX - endX
         var y = startY - endY
-        if(y > 0) {
+        if(y > 0 && curnum < 5) {
             nextNum = curnum + 1
-        } else if(y < 0) {
+        } else if(y < 0 && curnum > 0) {
             nextNum = curnum - 1
         }
         move(nextNum)

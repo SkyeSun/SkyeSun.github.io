@@ -271,6 +271,7 @@ a:link, a:visited, a:target {
     -webkit-transition: -webkit-transform 1s;*/
 }
 #work1 .workContainer {
+    display: inline-block;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: transform 2s;
 }

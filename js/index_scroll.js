@@ -82,7 +82,7 @@ var hideCanvas = function(num) {
 // 绑定粒子动态效果
 var bindParticle = function() {
     var colors = ['#7AEBEB', '#555555']
-    var ele = getElement('#skye-background')
+    var ele = getElement('body')
     for (var i = 0; i < colors.length; i++) {
         particleground(ele, {
             dotColor: colors[i],
@@ -97,7 +97,7 @@ var bindTouchEvent = function() {
     var nextNum = 0
 
     var startX = 0, startY = 0, endX = 0, endY = 0
-    var selector = 'canvas'
+    var selector = 'body'
     bindEventAll(selector, 'touchstart', function(e){
         startX = Number(e.targetTouches[0].pageX)
         startY = Number(e.targetTouches[0].pageY)
@@ -134,6 +134,7 @@ var bindWork1 = function() {
         des.parentElement.style.transform = 'rotateY(0deg)'
     })
 }
+
 
 
 

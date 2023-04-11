@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="res/img/shortcutIcon.png">
+    <title>Skye's Personal Page</title>
+    <link rel="stylesheet" href="css/index_scroll.css">
+
+    <script src='js/jquery.particleground.js'></script>
+
+  </head>
+  <body>
+      <div id="skye-background" data-curnum="0">
+          <div id="skye-contentPage">
+
+              <header id="skye-header" class="skye-header">
+                  <a href="#skye-personal"><img id="skye-logo" src="res/img/logo.png" alt="Personal Logo"></a>
+                  <nav id="skye-nav">
+                      <ul>
+                          <a href="#skyeabout"><li data-num=1>ABOUT<span></span></li></a>
+                          <a href="#skyework"><li data-num=2>WORK<span></span></li></a>
+                          <a href="#skyeblog"><li data-num=3>BLOG<span></span></li></a>
+                          <a href="#skyeresume"><li data-num=4>RESUME<span></span></li></a>
+                          <a href="#skyecontact"><li data-num=5>CONTACT<span></span></li></a>
+                      </ul>
+
+                  </nav>
+              </header>
+
+              <section id="skye-personal" class="section">
+                  <div class="content vertical-center-up">
+                      <h1 id="skye-quote" class="">LEAD THE WAY<div></div></h1>
+                      <p id="skye-sayHi" class="specialSentence">Hello, I'm Skye Sun. Welcome to my page.</p>
+                  </div>
+              </section>
+
+              <section id="skye-about" class="section">
+                  <div class="content vertical-center-up">
+                      <h1>WHAT I DO</h1>
+                      <p class="doing specialSentence">Coding and driving<span></span></p>
+                      <p>Skye Sun<br>22 year old Web Front-End Programmer<br> currently based in <span class="specialWord">Beijing</span>,China
+                          <br>studying in <span class="specialWord">JXNU</span><br>loving tec and cars<br>hoping to change the
+                          world by coding someday.</p>
+                      <p>Check out some of my featured projects below<br> or view more of my work on <span class="specialWord">Github</span>
+                         and <span class="specialWord">My Blog</span>(coming soon)</p>
+
+                      <p>I'm Currently <span class="specialWord">Available</span> for Hire!</p>
+                      <button type="button" name="button">CONTACT ME NOW</button>
+                  </div>
+              </section>
+
+              <section id="skye-work" class="section">
+                  <div class="content vertical-center-up">
+                      <h1>MY WORKS</h1>
+                      <div id="work1" class="myWork">
+                          <div class="workContainer">
+                              <img id="work1-img" class="side" src="res/img/demo1.gif" alt="work 1 img here">
+                              <div id="work1-des" class=" side center workIntro ">
+                                  <h1 class="">Music Player</h1>
+                                  <div class="des center">
+                                      Mobile 风格的音乐播放器<br>由 HTML + CSS + 原生 JavaScript 写成<br>支持圆形进度条和动画效果
+                                  </div>
+                                  <a class="demo" href="http://skyesun.cc/MusicPlayer/" target="_blank">Demo 戳我</a>
+                                  <a class="code" href="https://github.com/SkyeSun/MusicPlayer" target="_blank">源码 戳我</a>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div id="work2" class="myWork hide">
+                          <div class="workIntro">
+                              <p>work 2 Intro</p>
+                          </div>
+                          <div class="workImg">
+                              <img src="res/img/logo.png" alt="work 2 img here">
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <section id="skye-blog" class="section">
+                  <h1 class="content vertical-center-up">
+                      Skye's Blog is on the way...
+                  </h1>
+              </section>
+
+              <section id="skye-resume" class="section">
+                  <h1 class="content vertical-center-up">
+                      Skye's Resume is on the way...
+                  </h1>
+              </section>
+
+              <section id="skye-contact" class="section">
+                  <div class="content vertical-center-up">
+                      <h1>Contact</h1>
+                      <div class="contacts">
+                          <div id="contact-email" class="contact">
+                              <a href="#" target="_blank">
+                                <img src="res/img/email.png" alt="email">
+                              </a>
+                          </div>
+                          <div id="contact-github" class="contact">
+                              <a href="https://github.com/SkyeSun" target="_blank">
+                                <img src="res/img/github.png" alt="github">
+                              </a>
+                          </div>
+                          <div id="contact-weibo" class="contact">
+                              <a href="http://weibo.com/u/3867756601?topnav=1&wvr=6&topsug=1&is_all=1" target="_blank">
+                                <img src="res/img/weibo.png" alt="weibo">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <footer id="skye-footer" class="">
+                  <img class="logo vertical-center-down" src="res/img/logo.png" alt="Personal Logo">
+                  <span>&#0169; 2017 All rights reserved, by SkyeSun</span>
+              </footer>
+
+              <img id="slideDown" class="" src="res/img/slideDown.png" alt="slideDown">
+
+          </div>
+      </div>
+
+      <script src="js/skye.js"></script>
+      <script src="js/index_scroll.js"></script>
+  </body>
+</html>

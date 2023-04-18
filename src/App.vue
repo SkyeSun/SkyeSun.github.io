@@ -18,8 +18,8 @@
   </header>
 
   <RouterView /> -->
-  <div class="fixed top-2/4 left-1/4 text-center italic">
-    <div class="font-bold text-4xl">Welcome to the Space of Skye.</div>
+  <div class="h-screen flex justify-center items-center flex-wrap text-center italic">
+    <div class="w-full font-bold text-4xl">Welcome to the Space of Skye.</div>
     <div class="text-lg">Upcoming...</div>
   </div>
 </template>

@@ -18,11 +18,14 @@
   </header>
 
   <RouterView /> -->
-  Welcome to the Space of Skye.
+  <div class="fixed top-2/4 left-1/4 text-center italic">
+    <div class="font-bold text-4xl">Welcome to the Space of Skye.</div>
+    <div class="text-lg">Upcoming...</div>
+  </div>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -82,5 +85,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
